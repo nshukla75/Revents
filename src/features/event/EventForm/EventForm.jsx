@@ -57,7 +57,7 @@ const category = [
 
 class EventForm extends Component {
   onFormSubmit = values => {
-    values.date = moment(values.date).format()  
+    values.date = moment(values.date).format();
     if (this.props.initialValues.id) {
       this.props.updateEvent(values);
       this.props.history.goBack();
@@ -119,7 +119,7 @@ class EventForm extends Component {
                 type="text"
                 component={DateInput}
                 dateFormat="YYYY-MM-DD HH:mm"
-                timeFormat='HH:mm'
+                timeFormat="HH:mm"
                 showTimeSelect
                 placeholder="Date and Time of event"
               />
