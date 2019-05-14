@@ -58,9 +58,9 @@ class TestComponent extends Component {
     return (
       <div>
         <Script
-          url="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqwDaD3rKsj-BGghUAvW_HbLsTUZqKf-E&libraries=places"
+          url="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtvijd54867i3PpRerOn53eQVMoPI0qRE&libraries=places"
           onLoad={this.handleScriptLoad}
-        />
+        /> 
         <h1>Test Area</h1>
         <h3>The answer is: {data}</h3>
         <Button onClick={incrementCounter} color="green" content="Increment" />
@@ -75,7 +75,7 @@ class TestComponent extends Component {
         </form>
         <div style={{ height: '300px', width: '100%' }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyDqwDaD3rKsj-BGghUAvW_HbLsTUZqKf-E' }}
+          bootstrapURLKeys={{ key: 'AIzaSyAtvijd54867i3PpRerOn53eQVMoPI0qRE' }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
